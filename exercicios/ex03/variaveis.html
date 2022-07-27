@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados com JS</title>
+  <style>
+    body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+    }
+    button{
+      padding: 30px;
+    }  
+
+  </style>
+</head>
+<body>
+  
+  <h1>Trabalhando com dados 1.1</h1>
+  <p>Criando e armazenando dados em variáveis!</p>
+  <p>Somando dois valores</p>
+
+  <script>
+    var n1 = Number(window.prompt('Digite um número: '))
+    var n2 = Number(window.prompt('Digite outro número: '))
+    var s = n1 + n2
+    //prompt sempre retorna um valor em STRING
+    //VAR S = N1 + N2 NÃO VAI SOMAR E SIM CONCATENAR!
+    // (number + number) é adição
+    //(string + string) é concatenação
+    // para fazer soma neste caso teremos de converter string para number
+    //para isso podemos usar: Number.parseInt ou parseFloat() ou só Number
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) 
+  </script>
+  
+</body>
+</html>
