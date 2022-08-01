@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    body{
+      background-color: rgb(59, 21, 95);
+      color: bisque;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estudando DOM</h1>
+  <h2>Iniciando estudos de Document Object Model DOM</h2>
+  <p>Aqui vai o <strong>resultado</strong></p>
+  <div id="msg">Clique em mim!</div>
+  <script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[0]
+    //var d = document.getElementById('msg')
+    var d = document.querySelector('div#msg')
+    corpo.style.background = 'black'
+    p1.style.color = 'red'
+    d.style.background = 'green'
+  </script>
+</body>
+</html>
