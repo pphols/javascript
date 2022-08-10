@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <style>
+    body{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+    }
+    div#caixa{
+      background-color: rgb(61, 204, 61);
+      color: rgb(247, 246, 248);
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interaja com a bola!</h1>
+
+  <div id="caixa">
+      INTERAJA..
+  </div>
+
+  <script>
+     var a = document.getElementById('caixa')
+
+     a.addEventListener('click', clicou)
+     a.addEventListener('mouseenter', entrou)
+     a.addEventListener('mouseout', saiu)
+
+    function clicou() {
+     a.innerText = 'você clicou!'
+     a.style.background = 'purple'      
+    }
+    function entrou() {
+     a.innerText = "mouse dentro" 
+    }
+    function saiu() {
+      a.innerText = "mouse fora"
+      a.style.background = 'rgb(61, 204, 61)'      
+    }
+
+  </script>
+</body>
+</html>
