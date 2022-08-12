@@ -19,6 +19,9 @@ section{
 div#msg{
   padding: 10px;
 }
+div#txt{
+  padding: 7px;
+}
 
 footer{
   color: white;
